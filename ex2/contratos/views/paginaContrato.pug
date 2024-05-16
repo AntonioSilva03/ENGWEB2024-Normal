@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    .w3-card-4
+        header.w3-container.w3-blue
+            h1 #{titulo}
+        .w3-container
+            p ID Contrato: #{contrato.idcontrato}
+            p Número Anúncio: #{contrato.nAnuncio ? contrato.nAnuncio : 'Sem informação'}
+            p Tipo Procedimento: #{contrato.tipoprocedimento}
+            p Objeto Contrato: #{contrato.objectoContrato}
+            p Data Publicação: #{contrato.dataPublicacao}
+            p Data Celebração Contrato: #{contrato.dataCelebracaoContrato}
+            p Preço Contratual: #{contrato.precoContratual}
+            p Prazo Execução: #{contrato.prazoExecucao}
+            p NIPC Entidade Comunicante: #{contrato.NIPC_entidade_comunicante}
+            p Entidade Comunicante: #{contrato.entidade_comunicante}
+            p Fundamentação: #{contrato.fundamentacao ? contrato.fundamentacao : 'Sem informação'}
+
+        footer.w3-container.w3-blue
+                h5 
+                    span [ 
+                        a(href="/") Voltar à página inicial 
+                    span ]
